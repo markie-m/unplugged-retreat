@@ -385,15 +385,13 @@ aside {
   /* Header */
 
   header {
-    padding: 50px 60px;
-    display: flex;
-    justify-content: space-between;
+    padding: 33px 0;
+    justify-content: space-around;
   }
 
   header .content-wrapper {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   header nav {
@@ -401,8 +399,6 @@ aside {
   }
 
   header nav ul {
-    padding: 40px 65px;
-    display: flex;
     justify-content: space-between;
   }
 
@@ -416,7 +412,7 @@ aside {
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
 
@@ -429,27 +425,27 @@ aside {
   /* Features */
 
   .features article {
-    /* width: 22%; */
-    margin: 40px 130px;
+    /* margin: 40px 130px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
 
   .features .features-item-description {
-    width: 22%;
+    width: 50%;
   }
 
   /* Reviews */
   .reviews article {
-    padding: 100px 60px;
+    /* padding: 100px 60px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .reviews article div {
-    width: 40%;    
+    width: 49%;    
   }
 
   /* Footer */
@@ -459,9 +455,9 @@ aside {
   }
 
   .footer-content {
-    padding: 100px 120px;
+    /* padding: 100px 120px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -470,9 +466,49 @@ aside {
   }
 
   footer .copyright {
-    width: 190px;
+    width: 100%;
   }
   
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+ 
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+   .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
     
 @media only screen and (min-width: 1200px) {
