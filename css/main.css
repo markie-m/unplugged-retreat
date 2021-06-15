@@ -373,15 +373,110 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+   /* Tablet styles here */
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+
+  header {
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    padding: 40px 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {        
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features article {
+    /* width: 22%; */
+    margin: 40px 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .features .features-item-description {
+    width: 22%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    padding: 100px 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews article div {
+    width: 40%;    
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    padding: 100px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 190px;
+  }
+  
+}
+    
+@media only screen and (min-width: 1200px) {
+   /* Desktop styles here */
 }
 
 /* ==========================================================================
