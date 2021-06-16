@@ -130,12 +130,12 @@ p {
   line-height: 1.285;
 }
     
-img {
-    
+img { 
+	width: 100%;
 }
-    
+ 
 figure {
-    
+  margin: 0;
 }
     
 address {
@@ -172,7 +172,11 @@ header .content-wrapper {
 }
 
 header figure {
-
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -197,6 +201,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  margin: 0;
 }
 
 /* FOOTER */
@@ -245,8 +250,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-bridge.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
-h1 {
+.hero-area h1 {
   /* padding: 22px; */
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -263,6 +271,9 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
+aside .content-wrapper {
+  margin: 0 0 50px;
 }
 
 aside .form {
@@ -298,6 +309,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-dark.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -329,6 +342,16 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+}
+
+.reviews figure {
+  /* max-width: 450px; */
+  /* justify-self: center; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -678,6 +701,9 @@ input[type=button] {
   header {
     padding: 15px 0;
   }
+  header figure {
+    width: 25%;
+  }
 
   .content-wrapper {
     max-width: 960px;
@@ -695,6 +721,9 @@ input[type=button] {
   p {
     font-size: 1.125em;
     line-height: 1.333;
+  }
+  footer .contact a {
+    font-size: 1.125em;
   }
 
   /* Hero */
@@ -727,13 +756,13 @@ input[type=button] {
   }
 
   /* Reviews */ 
-
+  
   .reviews h2 {
     padding-bottom: 50px; 
   }
 
   .reviews article div {
-    width: 42%;
+    width: 47%;
   }
 
   footer h4 {
