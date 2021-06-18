@@ -236,6 +236,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 footer .copyright {
@@ -639,7 +643,7 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     /* padding: 100px 120px; */
     display: flex;
     justify-content: space-between;
@@ -657,7 +661,12 @@ input[type=button] {
   }
 
   footer p {
-      line-height: 1.285;
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
