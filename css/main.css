@@ -430,6 +430,16 @@ input[type=button] {
   flex-flow: row wrap;
   background-color: #2a423a;
 }
+.contact-content {
+  display: flex;
+  /* flex-flow: row wrap;
+  justify-content: space-between; */
+  flex-direction: column;
+}
+.contact-content p,
+.contact-content a {
+  font-size: 0.875em;
+}
 
 .contact-content p {
   margin: 0;
@@ -720,10 +730,17 @@ input[type=button] {
     width: 80%;
   }
 
+  .contact-section .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
   .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .contact-content h4 {
@@ -843,6 +860,11 @@ input[type=button] {
 
   .contact-content h4 {
     font-size: 1.875em;
+  }
+
+  .contact-content p,
+  .contact-content a {
+    font-size: 1.125em;
   }
 
   /* ==========================================================================
