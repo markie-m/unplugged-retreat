@@ -203,6 +203,22 @@ header nav ul {
   padding: 0;
   margin: 0;
 }
+header nav ul li a {
+  padding: 5px;
+}
+header nav ul li a:link,
+header nav ul li a:visited {
+  border: 2px solid transparent;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+  border: 2px solid #e2e3ed;
+  background-color: #527158;
+}
+header nav ul li a.active {
+  text-decoration: solid underline 2px;
+  text-underline-offset: 9px;
+}
 
 /* FOOTER */
 footer {
@@ -240,6 +256,13 @@ footer .social-icons p {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+footer .social-icons p:hover,
+footer .social-icons p:focus {
+  background-color: #2a423a;
+  border: 2px solid #e2e3ed;
 }
 
 footer .copyright {
@@ -304,6 +327,7 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* FEATURES */
@@ -434,7 +458,7 @@ input[type=button] {
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .faq-content h4 {
